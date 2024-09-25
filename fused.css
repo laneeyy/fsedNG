@@ -1,0 +1,322 @@
+* {
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  width: auto;
+}
+
+.navbar {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 100px;
+    padding-right: 15px;
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+li a{
+    color: black;
+    font-size: 22px;
+    margin-right: 25px;
+}
+
+a:hover {
+  color: #FBDE75;
+}
+    
+.bg-image {
+    background-image: url("Landing Page/collage.png");
+    background-color: rgb(255, 255, 255);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-blend-mode: multiply;
+    padding-top: 300px;
+    padding-bottom: 100px;
+}
+  
+.bg-text {
+    color: #fff;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center;
+    font-size: 38px;
+    font-family: "Cormorant Infant", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  letter-spacing: 1px;
+  line-height: 25px;
+  padding-top: 22px;
+}
+
+.button {
+  position: relative;
+  background-color: transparent;
+  color: white;
+  font-size: 24px;
+  border: 1px white solid;
+  letter-spacing: 0.1em;
+  padding: 20px 30px;
+  transition: 0.5s;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.button:hover {
+  background: var(--clr);
+  letter-spacing: 0.25em;
+  box-shadow: 0 0 35px var(--clr);
+}
+
+.container {
+  margin: 0 auto;
+  padding-left: 100px;
+  padding-right: 30px;
+  padding-bottom: 80px;
+}
+
+h2 {
+  margin: 0;
+  font-size: 40px;
+  padding-top: 85px;
+  padding-left: 100px;
+}
+
+.container .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.container .box-container .box {
+  background-color: #fff;
+}
+
+.container .box-container .box .box-image {
+  padding-top: 45px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 5px;
+  justify-content: space-between;
+}
+
+.container .box-container .box .box-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.container .box-container .box:hover .box-image img {
+  transform: scale(1.1);
+}
+
+
+.container .box-container .box .content h3 {
+  font-size: 20px;
+  color: #334;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.container .box-container .box .content p {
+  font-size: 20px;
+  color: #777;
+  line-height: 2;
+}
+
+.container .box-container .box .content .btn {
+  display: inline-block; 
+  color: black;
+  padding: 15px 25px;
+  font-size: 15px;
+  border: 1px black solid;
+  background-color: transparent;
+  letter-spacing: 0.1em;
+  transition: 0.5s;
+}
+
+.container .box-container .box .content .btn:hover {
+  background: var(--clr);
+  letter-spacing: 0.25em;
+  box-shadow: 0 0 5px var(--clr);
+  border: 0;
+}
+
+.about-img {
+  background-image: url("Landing Page/comfortable-sneakers-1\ 1.png");
+  background-color: rgb(255, 255, 255);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-blend-mode: multiply;
+  height: 580px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.about-text {
+  color: #fff;
+  padding-left: 100px;
+  padding-right: 50px;
+  text-align: left;
+  letter-spacing: 0.1em;
+}
+
+.about-text h1 {
+  font-family: "Merriweather", serif;
+  font-style: normal;
+  font-size: 40px;
+  padding-bottom: 32px;
+}
+
+.about-text p {
+  font-size: 20px;
+  line-height: 32.4px;
+  padding-bottom: 85px;
+}
+
+.about-text .about-btn {
+  padding: 12px 24px 12px 24px;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  font-size: 24px;
+  transition: 0.5s;
+}
+
+.about-text .about-btn a{
+  color: #fff;
+}
+
+.about-text .about-btn:hover {
+  letter-spacing: 0.25em;
+}
+
+
+.explore-img {
+  display: flex;
+}
+
+.best-seller {
+  background-image: url("Landing Page/pexels-photo-5117638\ 1.png");
+  background-color: rgb(255, 255, 255);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-blend-mode: multiply;
+  height: 580px;
+  width: 720px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  flex-grow: 1;
+}
+
+.new-arrivals {
+  background-image: url("Landing Page/Screenshot-2023-11-16-at-6.13\ 1.png");
+  background-color: rgb(255, 255, 255);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-blend-mode: multiply;
+  height: 580px;
+  width: 720px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  flex-grow: 1;
+}
+
+.explore-img h1 {
+  color: #fff;
+  padding-left: 100px;
+  font-family: "Merriweather", serif;
+  font-style: normal;
+  font-size: 40px;
+  padding-bottom: 32px;
+}
+
+.explore-img .explore-btn {
+  padding: 12px 24px 12px 24px;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  font-size: 24px;
+  transition: 0.5s;
+  margin-top: 270px;
+  margin-left: 404px;
+}
+
+.explore-img .explore-btn:hover {
+ letter-spacing: 0.1em;
+}
+
+.brand-img {
+  overflow: hidden;
+}
+
+.slide {
+  display: flex;
+  align-items: center;
+  padding: 50px;
+}
+
+.slide-track {
+  display: flex;
+  animation: scroll 7s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 9));
+  }
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #252525;
+  height: 120px;
+  color: #fff;
+}
+
+.footer p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32.4px;
+  text-align: left;
+  padding-left: 100px;
+}
+
+.footer-div li a {
+  color: #fff;
+}
